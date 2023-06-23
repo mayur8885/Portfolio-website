@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    
+    <title>portfolio</title>
+</head>
+<style>
+    .port-heading{
+        display: flex;
+        /* margin: 5rem ; */
+        
+    }
+    .port-h1{
+        /* margin-right: 5rem; */
+        margin: 10rem 0rem 0rem 15rem;
+        font-size: 2rem;
+    }
+    .para-para{
+        margin: 10rem 10rem 0rem 15rem;
+
+    }
+    .main-heading-img{
+        width: 75%;
+        height: 40rem;
+        margin: 3rem 0rem 1rem 12rem;
+        justify-content: center;
+        border-radius: 1rem;
+    }
+
+    ul{
+        display: flex;
+        margin: 2rem;
+        padding: 1rem;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 0rem;
+    }
+    ul li{
+        list-style: none;
+        margin-right: 3rem;
+        color: rgb(180, 182, 184);
+
+    }
+    li:hover{
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .active{
+        color: aliceblue;
+    }
+
+    .galary-list-content{
+        text-align: center;
+    }
+     .galary-image-main{
+            display: flex;
+            flex-wrap: wrap;
+            /* float: left; */
+            /* margin: -3rem 5rem 5rem 5rem;
+             padding: 2rem;
+            justify-content: center;
+            width: 50rem; */
+        }
+    .galary-image-main .itemBox{
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        margin: 2rem;
+    }
+      /* .galary-image{
+        width: 100%;
+        height: auto;
+        margin-left: 5rem;
+        padding-left: 5rem;
+      }   */
+      /* img{
+        margin: 0rem 1rem 2rem 1rem;
+        padding-left: 2rem;
+    } */
+
+    .galary-image-main .itemBox img{
+        position: absolute;
+        top: 0;
+        left: 4rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .section-three{
+        text-align: center;
+    }
+
+    .heading-lets{
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+    .get-in-touch{
+        color: rgb(127, 37, 210);
+    }
+    .get-in-touch:hover{
+        cursor: pointer;
+        color: rgb(192, 139, 245);
+    }
+
+     /* footer css */
+     .list {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+        
+    }
+    .li-footer-content{
+        margin-left: 4rem;
+        background-color: rgb(46, 43, 43);
+        padding: .6rem;
+
+    }
+   .li-footer-content:hover{
+        cursor: pointer;
+        background-color: rgb(61, 58, 58);
+    }
+    footer{
+        background-color: black;
+        /* margin-top: 200px; */
+        /* margin-bottom: 100px; */
+        height: 12rem;
+        margin-top: 15rem;
+    }
+    .footer-rigths{
+     margin-bottom: 0rem;   
+    }
+    .logo{
+        justify-content: center;
+        text-align: center;
+        margin-top: 10rem;
+        margin-bottom: 0rem;
+        font-family: cursive;
+        font-size: 1.5rem;
+
+    }
+</style>
+<body>
+    <header>
+        <nav class="sticky">
+            <div class="left">HariOm Art</div>
+            <div class="rigth">
+                <ul>
+                    <li><a href="index.html ">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="#top">Portfolio</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html" href="registration.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <section class="section-one">
+            <div class="port-heading">
+                <h1 class="port-h1">PORTFOLIO</h1>
+                <P class="para-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, itaque.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, rem.
+                </P>
+            </div>
+            <img class="main-heading-img" src="img/ganpati.jpg" alt="">
+            <div>
+                <img src="" alt="">
+            </div>
+
+        </section>
+        <section class="section-two">
+            <div class="galary">
+                <div class="galary-list-content">
+                    <ul>
+                        <li class="one active" data-filter="all">ALL</li>
+                        <li class="one" data-filter="lalbagh">LALBAGH</li>
+                        <li class="one" data-filter="dagrudas">DAGRUDAS</li>
+                        <li class="one" data-filter="burhani">BURHANI</li>
+                        <li class="one" data-filter="maharastri">MAHARASTRI</li>
+                    </ul>
+                </div>
+
+                <div class="galary-image-main">
+
+                 <div class="itemBox lalbagh"><img class="galary-image" src="img/gan2.jpeg" alt="">    </div>
+                 <div class="itemBox dagrudas"><img class="galary-image" src="img/gan1.jpeg" alt="">    </div> 
+                 <div class="itemBox burhani"><img class="galary-image" src="img/gan4.jpg" alt="">      </div> 
+                 <div class="itemBox maharastri"><img class="galary-image" src="img/gan3.jpg" alt="">      </div>
+                
+                 <div class="itemBox lalbagh"><img class="galary-image" src="img/gan2.jpeg" alt="">     </div>
+                 <div class="itemBox dagrudas"><img class="galary-image" src="img/gan1.jpeg" alt="">      </div>                 
+                 <div class="itemBox burhani"><img class="galary-image" src="img/gan4.jpg" alt="">      </div> 
+                 <div class="itemBox maharastri"><img class="galary-image" src="img/gan3.jpg" alt="">      </div>
+     
+                 <div class="itemBox lalbagh"><img class="galary-image" src="img/gan2.jpeg" alt="" >     </div>
+                 <div class="itemBox dagrudas"><img class="galary-image" src="img/gan1.jpeg" alt="">      </div>
+                 <div class="itemBox burhani"><img class="galary-image" src="img/gan4.jpg" alt="">      </div>
+                 <div class="itemBox maharastri"><img class="galary-image" src="img/gan3.jpg" alt="">      </div>
+                
+                 <div class="itemBox lalbagh"><img class="galary-image" src="img/gan2.jpeg" alt="">      </div>
+                 <div class="itemBox dagrudas"><img class="galary-image" src="img/gan1.jpeg" alt="" width="1000" height="400"></div>  
+                 <div class="itemBox burhani"><img class="galary-image" src="img/gan4.jpg" alt="">      </div> 
+                 <div class="itemBox maharastri"><img class="galary-image" src="img/gan3.jpg" alt="">      </div> 
+                
+            </div>
+            
+        </section>
+        
+        <section class="section-three">
+            <a class="sectoin-three-img" href=""></a>
+            <h2 class="heading-lets">LETS WORK TOGETHER</h2>
+            <a class="get-in-touch" href="#top" >GET IN TOUCH</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+        <h3>HariOm Art</h3>
+        </div>
+        <div class="list">
+            <li class="li-footer-content">Facebook</li>
+            <li class="li-footer-content">Instagram</li>
+            <li class="li-footer-content">YouTube</li>
+            <li class="li-footer-content">LinkedIn</li>
+        </div>
+
+
+        <div class="footer-rigths">www.HariOmMurtibhandar.com|Copyright 1999-2023 by Refsnes Data. All Rights Reserved.
+        </div>
+    </footer>
+
+    
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.one').click(function(){
+                const value = $(this).attr('data-filter');
+                if (value == 'all'){
+                    $('.itemBox').show('1000');
+                }
+                else{
+                    $('.itemBox').not('.'+value).hide('1000');
+                    $('.itemBox').filter('.'+value).show('1000');
+                }
+            })
+            //adding active activity
+            $('.one').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            })
+        })
+
+
+        
+    </script>
+    <!-- adding carousel  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
